@@ -19,7 +19,7 @@ public class ServiceClass {
 		hashOps=rtemp.opsForHash();
 	}
 	
-	public String saveToken(@RequestBody JwhatModel model) {
+	public String saveToken(JwhatModel model) {
 		hashOps.put("TOKENS",model.getTokenUser(),model);
 		return model.getTokenUser()+"'s token saved successfully"; 
 	}
